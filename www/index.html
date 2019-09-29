@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book info</title>
+</head>
+<body>
+    <form action="" method="POST" id="new_book">
+        <label>Tytuł
+            <input type="text" name="title">
+        </label>
+        <label>Autor
+            <input type="text" name="author">
+        </label>
+        <label>Wydawca
+            <input type="text" name="publisher">
+        </label>
+        <label>ISBN
+            <input type="text" name="isbn">
+        </label>
+        <label>Gatunek
+            <select name="genre">
+                <option value="1">Romans</option>
+                <option value="2">Obyczajowa</option>
+                <option value="3">Sci-fi i fantasy</option>
+                <option value="4">Literatura faktu</option>
+                <option value="5">Popularnonaukowa</option>
+                <option value="6">Poradnik</option>
+                <option value="7">Kryminał, sensacja</option>
+            </select>
+        </label>
+        <button type="submit">Dodaj nową książkę</button>
+    </form>
+    <table id="books">
+        <tbody>
+        </tbody>
+    </table>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
